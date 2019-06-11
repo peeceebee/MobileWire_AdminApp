@@ -1,0 +1,18 @@
+.event-view-report-container {
+  @include flex(null, null, null, column);
+  width: 55%;
+  padding: 15px 15px;
+
+  & .rt-table {
+    background-color: $tableBodyColor;
+    & .rt-td {
+      font-size: 12px;
+      text-align: center;
+    }
+    & .rt-thead {
+      background-color: $headerAccentColor;
+      color: $headerTextColor;
+      font-size: 14px;
+    }
+  }
+}

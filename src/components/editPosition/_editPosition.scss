@@ -1,0 +1,45 @@
+.edit-position-container {
+  margin: 20px;
+  width: 100%;
+  & h3 {
+    @include headerStyling();
+    width: 55%;
+    text-align: left;
+  }
+  & form {
+    width: 55%;
+    @include flex(space-around, null, center, column);
+    height: 200px;
+    background-color: white;
+    border: #d3d3d3 solid 0.5px;
+    padding: 3px 40px;
+    & label {
+      text-align: left;
+      width: 200px;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+    & input {
+      font-size: 14px;
+      padding: 5px;
+      width: 200px;
+      font-size: 11px;
+      height: 35px;
+    }
+ 
+    & button {
+      height: 35px;
+      width: 90px;
+      background-color: $buttonColor;
+      color: $buttonText;
+      font-size: $buttonTextSize;
+      font-weight: $buttonFontWeight;
+      transition: 0.2s background-color;
+      border-radius: $buttonBorderRadius;
+      margin: 10px 10px;
+    }
+  }
+  & .button-container {
+    @include flex(flex-start, center, center, null);
+  }
+}

@@ -1,0 +1,77 @@
+.home-view-container {
+  width: 100%;
+  background-color: #d0d7dc;
+  @include flex(null, center, center, column);
+  overflow: scroll;
+}
+.new-sign-in-container {
+  padding: 20px;
+  width: 100%;
+  & h3 {
+    @include headerStyling();
+  }
+  & .event-date-range {
+    background-color: $headerAccentColor;
+    color: $headerTextColor;
+    font-size: $headerAccentSubFontSize;
+    padding: $headerPadding;
+    display: block;
+  }
+  & .event-date-input-container {
+    @include flex(null, null, null, column);
+  }
+  & .event-form-container {
+    width: 100%;
+    @include flex(space-around, center, center, column);
+    background-color: $bodyAccentColor;
+    font-size: $bodyTextSize;
+    padding: 20px;
+    & .event-form {
+      @include flex(space-around, center, center, column);
+      width: 40%;
+      background-color: #ffffff;
+      border: #d3d3d3 solid 0.5px;
+      font-weight: 300;
+      height: 300px;
+      & .event-date-input {
+        height: $inputHeight;
+        margin-top: 5px;
+        font-weight: 300;
+        width: 100%;
+        padding: $inputPadding;
+        border-radius: $inputBorderRadius;
+        border: #d3d3d3 solid 1px;
+
+      }
+      & .radio-container {
+        @include flex(flex-start, center, null, column);
+        & .radio-btn-container {
+          @include flex(space-between, center, center, row);
+          border-bottom: #d3d3d3 solid 0.5px;
+          width: 200px;
+        }
+        & input {
+          margin-right: 10px;
+        }
+        & label {
+          @include flex(flex-start, center, null, row);
+          padding: 10px 0;
+          width: 120px;
+        }
+      }
+      & .new-sign-in-btn {
+        height: 45px;
+        width: 208px;
+        background-color: $buttonColor;
+        color: $buttonText;
+        font-size: $buttonTextSize;
+        font-weight: $buttonFontWeight;
+        transition: 0.2s background-color;
+        border-radius: $buttonBorderRadius;
+      }
+      & .new-sign-in-btn:hover {
+        background-color: $hoverButtonColor;
+      }
+    }
+  }
+}

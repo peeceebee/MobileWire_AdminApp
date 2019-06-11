@@ -1,0 +1,39 @@
+.report-container {
+    width: 100%;
+    background-color: #d0d7dc;
+    overflow: scroll;
+    & h3 {
+        @include headerStyling();
+      }
+}
+.report-data {
+    width: 100%;
+    background-color: #ffffff;
+    border: #d3d3d3 solid 0.5px;
+    font-weight: 300;  
+  }  
+  .ReactTable {
+    border: solid 1px $headerAccentColor;
+  }
+  .rt-table {
+    background-color: $tableBodyColor;
+    width: 100%;
+  
+    & .rt-td {
+      font-size: 14px;
+      text-align: center;
+      padding: 7px;
+  
+    }
+    & .rt-thead {
+      background-color: $headerAccentColor;
+      color: $headerTextColor;
+      font-size: 16px;
+    }
+  }
+  .ReactTable .rt-tbody .rt-td {
+    border-right: solid 1px rgba(0, 0, 0, 0.4);
+  }
+  .ReactTable .rt-tbody .rt-tr-group {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+  }

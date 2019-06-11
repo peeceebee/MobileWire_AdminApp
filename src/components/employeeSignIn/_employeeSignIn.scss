@@ -1,0 +1,57 @@
+.sign-in-employees {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 340px;
+  background-color: #eceff1;
+  @include flex(null, center, center, column);
+  margin-bottom: 20px;
+
+  & h3 {
+    @include headerStyling();
+    width: 100%;
+  }
+  & .sign-in-employee-date {
+    @include headerAccentStyling();
+    width: 100%;
+  }
+  & .sign-in-btn-container {
+    height: 80%;
+    width: 324px;
+    background-color: white;
+    border: #d3d3d3 solid 0.5px;
+    margin: auto;
+    padding: 0px 40px;
+    @include flex(space-around, null, null, column);
+    & section {
+      height: 50px;
+      & input {
+        height: 40px;
+      }
+    }
+    & label {
+      font-size: 10px;
+      word-spacing: 2px;
+      line-height: 1.2;
+      display: block;
+      color: rgb(230, 48, 48);
+    }
+  }
+  & input {
+    height: 30px;
+    font-weight: 300;
+    width: 100%;
+    padding: $inputPadding;
+    border-radius: $inputBorderRadius;
+    border: #d3d3d3 solid 1.0px;
+  }
+  & button {
+    height: 45px;
+    background-color: $buttonColor;
+    color: $buttonText;
+    font-size: $buttonTextSize;
+    font-weight: $buttonFontWeight;
+    transition: 0.2s background-color;
+    border-radius: $buttonBorderRadius;
+  }
+}

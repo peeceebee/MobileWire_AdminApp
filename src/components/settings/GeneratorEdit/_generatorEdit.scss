@@ -1,0 +1,88 @@
+
+.gen-edit-container {
+  width: 100%;
+  margin: 20px;
+  & h3 {
+    @include headerStyling();
+    text-align: left;
+    width: 80%;
+  }
+  & form {
+    @include flex(space-around, null, center, column);
+    background-color: white;
+    border: #d3d3d3 solid 0.5px;
+    display: flex; 
+    padding: 3px 40px;
+    width: 80%;
+    align-items: flex-start;
+    flex-direction: column;
+    & label {
+      text-align: left;
+      font-size: 14px;
+      margin-top: 6px;
+      font-weight: bold;
+    }    
+    & input {
+      font-size: 14px;
+      color:  black;
+      padding: 5px;
+      width: 300px;
+      font-size: 12px;
+      height: 45px;
+    }
+    & div {
+      display: flex; 
+      vertical-align: middle;
+      flex-wrap: nowrap;              
+      text-align: left;
+      & input,
+      label {
+        margin: 0;
+        vertical-align: middle;
+        color: black;
+        padding: 5px;
+            }
+      & input {
+        height: 25px;     
+        display: flex; 
+        vertical-align: middle;
+        padding: 5px;      
+            }     
+    }
+    & button {
+      height: 45px;
+      width: 100px;
+      background-color: $buttonColor;
+      color: $buttonText;
+      font-size: $buttonTextSize;
+      font-weight: $buttonFontWeight;
+      transition: 0.2s background-color;
+      border-radius: $buttonBorderRadius;
+      margin: 10px 10px;
+      display: block;
+    }
+  }
+  & .button-container {
+    @include flex(flex-start, center, center, null);
+  }
+}
+
+.css-bg1rzq-control,
+.css-bg1rzq-control:focus,
+.css-1szy77t-control,
+.css-1szy77t-control:focus
+ {
+  width: 200px;
+  height: 50px;
+  font-size: 12px;
+
+}
+
+.terminate-container {
+  width: 200px;
+}
+
+.css-1szy77t-control {
+  width: 200px;
+}
+

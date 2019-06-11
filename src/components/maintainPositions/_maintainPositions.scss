@@ -1,0 +1,11 @@
+.maintain-positions {
+    @include flex(null, null, null, column);
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+    & h3 {
+      @include headerStyling();
+    }
+
+  }
+  

@@ -1,0 +1,74 @@
+.edit-employees-container {
+  width: 100%;
+  margin: 20px;
+  & h3 {
+    @include headerStyling();
+    text-align: left;
+    width: 65%;
+  }
+  & form {
+    @include flex(space-around, null, center, column);
+    height: 600px;
+    background-color: white;
+    border: #d3d3d3 solid 0.5px;
+    padding: 3px 40px;
+    width: 65%;
+    & label {
+      text-align: left;
+      width: 200px;
+      font-size: 11px;
+      margin-top: 6px;
+    }
+    & input {
+      font-size: 14px;
+      padding: 5px;
+      width: 200px;
+      font-size: 11px;
+      height: 45px;
+    }
+    & div {
+      & input,
+      label {
+        width: 30px;
+        margin: 0;
+      }
+      & input {
+        height: 20px;
+      }
+    }
+    & button {
+      height: 45px;
+      width: 100px;
+      background-color: $buttonColor;
+      color: $buttonText;
+      font-size: $buttonTextSize;
+      font-weight: $buttonFontWeight;
+      transition: 0.2s background-color;
+      border-radius: $buttonBorderRadius;
+      margin: 10px 10px;
+    }
+  }
+  & .button-container {
+    @include flex(flex-start, center, center, null);
+  }
+}
+
+.css-bg1rzq-control,
+.css-bg1rzq-control:focus,
+.css-1szy77t-control,
+.css-1szy77t-control:focus
+ {
+  width: 200px;
+  height: 50px;
+  font-size: 12px;
+
+}
+
+.terminate-container {
+  width: 200px;
+}
+
+.css-1szy77t-control {
+  width: 200px;
+}
+

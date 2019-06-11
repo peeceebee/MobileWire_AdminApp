@@ -1,0 +1,45 @@
+@import "./normalize";
+@import "./variables";
+@import "./mixins";
+@import "../../node_modules/antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import "../components/app/app";
+@import "../components/employeeSignIn/employeeSignIn";
+@import "../components/editEmployee/editEmployee";
+@import '../components/editPosition/editPosition';
+@import "../components/homeView/home";
+@import "../components/maintainEmployees/maintainEmployees";
+@import "../components/maintainPositions/maintainPositions";
+@import "../components/nav/nav";
+@import "../components/eventReport/eventReport";
+@import "../components/eventView/eventView";
+@import "../components/employeeNewSignIn/employeeNewSignIn";
+@import "../components/employeeSignInEdit/employeeSignInEdit";
+@import "../components/loading/loading";
+@import "../components/eventList/EventList";
+@import "../components/signInCommands/SignInCommands";
+@import "../components/reports/EventReportView";
+@import "../components/settings/MissionSettings/missionSettings";
+@import "../components/settings/GeneratorInventory/generatorInventory";
+@import "../components/settings/GeneratorEdit/generatorEdit";
+
+* {
+  box-sizing: border-box;
+  // border: solid red 1px;
+  margin: 0;
+  padding: 0;
+}
+body,
+html,
+#root,
+.App {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}

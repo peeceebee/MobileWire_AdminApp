@@ -1,0 +1,9 @@
+.event-view {
+  width: 100%;
+  @include flex(null, null, null, null);
+  overflow: scroll;
+  & .event-view-form-container {
+    padding: 15px 15px;
+    width: 55%;
+  }
+}

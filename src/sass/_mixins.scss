@@ -1,0 +1,30 @@
+// Core Mixins
+
+@mixin reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex($jc, $ac, $ai, $fd) {
+  display: flex;
+  justify-content: $jc;
+  align-content: $ac;
+  align-items: $ai;
+  flex-direction: $fd;
+}
+
+@mixin headerStyling() {
+  background-color: $headerColor;
+  color: $headerTextColor;
+  padding: $headerPadding;
+  font-size: $headerAccentFontSize;
+  font-weight: 400;
+}
+
+@mixin headerAccentStyling() {
+  background-color: $headerAccentColor;
+  color: $headerTextColor;
+  font-size: $headerAccentSubFontSize;
+  padding: $headerPadding;
+  display: block;
+}

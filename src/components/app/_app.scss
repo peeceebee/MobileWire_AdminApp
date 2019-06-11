@@ -1,0 +1,29 @@
+.App {
+  height: 100%;
+  background-color: $bodyColor;
+  & h1 {
+    @include reset-margin-padding;
+    background-color: $headerColor;
+    color: $headerTextColor;
+    font-size: $headerFontSize;
+    padding: 10px 25px;
+    font-weight: normal;
+  }
+}
+
+.App-container {
+  display: flex;
+  height: 100%;
+  background-color: #d0d7dc;
+  & .lds-spinner {
+    margin: auto;
+  }
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  min-height: 20px;
+}
+

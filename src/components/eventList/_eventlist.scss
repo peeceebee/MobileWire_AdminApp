@@ -1,0 +1,44 @@
+.event-list-container {
+  @include flex(null, null, null, column);
+  padding: 0 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  background-color: #eceff1;
+  width: 100%;
+  & h3 {
+    @include headerStyling();
+  }
+}
+
+.calendar-container {
+  justify-content: center;
+  padding: 0 20px;
+  padding-bottom: 20px;
+    background-color: #ffffff;
+  width: 800px;
+}
+
+.ReactTable {
+  border: solid 1px $headerAccentColor;
+}
+.rt-table {
+  background-color: $tableBodyColor;
+
+  & .rt-td {
+    font-size: 14px;
+    text-align: center;
+    padding: 7px;
+
+  }
+  & .rt-thead {
+    background-color: $headerAccentColor;
+    color: $headerTextColor;
+    font-size: 16px;
+  }
+}
+.ReactTable .rt-tbody .rt-td {
+  border-right: solid 1px rgba(0, 0, 0, 0.4);
+}
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+}
